@@ -11,7 +11,7 @@ public class ListaPoo {
 			l.addBloco(i);
 			
 		}
-	//l.removerBloco(3);
+	l.removerBloco(3);
 		l.mostraLista();
 		
 		//l.addBlocoApos(15,3);

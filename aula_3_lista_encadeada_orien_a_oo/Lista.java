@@ -74,10 +74,11 @@ public class Lista {
 	
 	public void mostraLista() {
 		Bloco aux = this.inicio;
-		
+		int cont=0;
 		while(aux != null) {
-			System.out.println(aux.getValor());
+			System.out.println("posição:" + cont + " valor:"+ aux.getValor());
 			aux = aux.prox;
+			cont++;
 		}
 		
 	}
@@ -98,10 +99,10 @@ public class Lista {
 	public Bloco removerBloco(int pos) {
 		Bloco aux = this.inicio;
 		
-		if(pos ==0){
-			inicio = inicio.prox;
-			return null;
-		}
+		// if(pos ==0){
+		// 	inicio = inicio.prox;
+		// 	return null;
+		// }
 		
 		Bloco blocoAtual = this.localizaBloco(pos-1);
 		if(blocoAtual != null && blocoAtual.prox != null){
