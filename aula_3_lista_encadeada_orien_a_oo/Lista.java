@@ -94,6 +94,25 @@ public class Lista {
 		return aux;
 		
 	}
+
+	public Bloco removerBloco(int pos) {
+		Bloco aux = this.inicio;
+		
+		if(pos ==0){
+			inicio = inicio.prox;
+			return null;
+		}
+		
+		Bloco blocoAtual = this.localizaBloco(pos-1);
+		if(blocoAtual != null && blocoAtual.prox != null){
+			blocoAtual.prox = blocoAtual.prox.prox;
+		} else {
+				System.out.println("Posiçao invalida");
+		}
+		
+		return aux;
+		
+	}
 	
 	
 }
