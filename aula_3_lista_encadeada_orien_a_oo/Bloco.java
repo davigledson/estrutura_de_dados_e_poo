@@ -1,7 +1,7 @@
 
 /**
  * aula03 - assunto: lista encadeada orientada a objeto
- * credito: @Vinicios Holanda
+ * 
  */
 package aula_3_lista_encadeada_orien_a_oo;
 

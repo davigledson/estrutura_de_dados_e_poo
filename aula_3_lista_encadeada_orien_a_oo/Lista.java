@@ -4,6 +4,7 @@ public class Lista {
 	
 	
 	public Bloco inicio;
+	public Head head = new Head();
 	
 	public void addBloco(int valor) {
 		
@@ -47,11 +48,17 @@ public class Lista {
 			System.out.println("Posição inválida");
 		}
 	}
+	
+	//Head
+	
 
+	public boolean estarVazio(){
+		return this.head.inicio == null;
+	}
 	public void addBlocoApos(int valor,int pos) {
 		Bloco novo = new Bloco();
 		novo.setValor(valor);
-
+		
 		Bloco aux = this.inicio;
 		int cont = 0;
 
@@ -70,8 +77,18 @@ public class Lista {
 		}
 
 	}
-	
-	
+
+
+	public void addBlocoAposRecursivo (int valor,int pos){
+		Bloco b = this.localizaBloco(pos);
+		if(b == null){
+			this.addBloco(0);
+			this.addBlocoAposRecursivo(valor,pos);
+		} else {
+			b.setValor(valor);
+		}
+
+	}
 	public void mostraLista() {
 		Bloco aux = this.inicio;
 		int cont=0;
@@ -95,6 +112,26 @@ public class Lista {
 		return aux;
 		
 	}
+	private Bloco localizaR (int pos,int atual, Bloco aux) {
+		if (aux != null) {
+			if (atual == pos) {
+				return aux;
+			} else {
+				return this.localizaR(pos, atual++, aux.prox);
+
+			}
+		} else {
+			return null;
+		}
+	}
+	public Bloco localizaBlocoRecursivo (int i) {
+
+					return this.localizaR(i,2,this.inicio.prox);
+
+	}
+
+
+
 
 	public Bloco removerBloco(int pos) {
 		Bloco aux = this.inicio;
