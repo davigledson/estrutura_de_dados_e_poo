@@ -5,6 +5,7 @@ public class Elemento {
     int valor;
     Elemento prox;
     Elemento ant;
+    int prioridade;
 
 
     public int getValor() {

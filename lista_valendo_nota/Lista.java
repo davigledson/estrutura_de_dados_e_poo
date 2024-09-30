@@ -163,6 +163,103 @@ public class Lista {
 
         return listaInvertida;  // Retorna a lista invertida
     }
+
+    //Questão 13 - Implemente o método “concatena(Lista l2)” na classe Lista. O método deve concatenar os elementos da lista atual com os elementos da lista passada como parâmetro, retornando uma nova lista.
+    public Lista concatena(Lista l2) {
+        Lista novaLista = new Lista();
+
+        // Adiciona elementos da lista atual
+        Elemento atual = this.inicio;
+        while (atual != null) {
+            novaLista.addElementoInicio(atual.valor);
+            atual = atual.prox;
+        }
+
+        // Adiciona elementos da lista l2
+        atual = l2.inicio;
+        while (atual != null) {
+            novaLista.addElementoInicio(atual.valor);
+            atual = atual.prox;
+        }
+
+        return novaLista;
+    }
+    //Questão 14 - Implemente um método “removeDuplicados” na classe Lista. Esse método deve percorrer a lista e remover todos os elementos duplicados, mantendo apenas a primeira ocorrência.
+    public void removeDuplicados() {
+        Elemento atual = inicio;
+        while (atual != null) {
+            Elemento verificador = atual;
+            while (verificador.prox != null) {
+                if (verificador.prox.valor == atual.valor) {
+                    verificador.prox = verificador.prox.prox; // Remove o duplicado
+                } else {
+                    verificador = verificador.prox; // Avança no verificador
+                }
+            }
+            atual = atual.prox; // Avança no elemento atual
+        }
+    }
+    //Questão 15 - Crie um método “clone” na classe Lista. Esse método deve retornar uma nova instância de Lista com os mesmos elementos da lista original.
+    public Lista clone() {
+        Lista novaLista = new Lista();
+        Elemento atual = this.inicio;
+
+        // Percorre a lista original e adiciona elementos na nova lista
+        while (atual != null) {
+            novaLista.addElementoFim(atual.valor);
+            atual = atual.prox;
+        }
+
+        return novaLista;
+    }
+    //Quesão 17 - Implemente o método “removeElemento(int pos)” na classe Lista. Esse método deve remover o elemento na posição especificada.
+    public Elemento removeElemento(int pos) {
+        if (pos < 0 || inicio == null) {
+            return null;
+        }
+        Elemento removido;
+
+        if (pos == 0) {
+            removido = inicio;
+            inicio = inicio.prox;
+            return removido;
+        }
+        Elemento atual = inicio;
+        Elemento anterior = null;
+        int cont = 0;
+
+        while (atual != null && cont < pos) {
+            anterior = atual;
+            atual = atual.prox;
+            cont++;
+        }
+
+        if (atual == null) {
+            return null;
+        }
+
+        // Remover o elemento na posição especificada
+        anterior.prox = atual.prox;
+        removido = atual;
+        return removido;
+    }
+
+    //Questão 18 - Adicione o método “localizarMaior(int valor)” na classe Lista. Esse método deve retornar uma Lista com todos os blocos que contenham um valor maior do que o valor passado .
+    public Lista localizarMaior(int valor) {
+        Lista novaLista = new Lista();
+        Elemento atual = inicio;
+
+        // Percorre a lista original
+        while (atual != null) {
+            if (atual.getValor() > valor) {
+                novaLista.addElemento(atual.getValor(), false);
+            }
+            atual = atual.prox;
+        }
+
+        return novaLista;
+    }
+
     public void mostraLista() {
         mostraLista(this.inicio);
     }
