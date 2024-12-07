@@ -151,6 +151,7 @@ public class Lista {
 
         return cont;
     }
+    
     //Questão 7 - Na classe Lista, implemente o método inverte que retorna uma Lista com os elementos em ordem invertida.
     public Lista inverte() {
         Lista listaInvertida = new Lista();
