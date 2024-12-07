@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.1 Chrome/128.0.6613.186 Electron/32.2.6 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="MaueXD7JyF0_lRMRBM_r">
+    <mxGraphModel dx="797" dy="471" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5000" pageHeight="5000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;MeioDePagamento&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;autorizarPagamento(double valor) : boolean&lt;br&gt;+ processarPagamento(double valor): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="820" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-19" value="CartaoDeCredito" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="1060" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-20" value="- limite: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-19">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-19">
+          <mxGeometry y="52" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-22" value="+&amp;nbsp;autorizarPagamento(double valor) : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-19">
+          <mxGeometry y="60" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-23" value="+ processarPagamento(double valor): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-19">
+          <mxGeometry y="100" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-24" value="Pix" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1060" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-25" value="- chave: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-24">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-24">
+          <mxGeometry y="52" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-27" value="+&amp;nbsp;autorizarPagamento(double valor) : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-24">
+          <mxGeometry y="60" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-28" value="+ processarPagamento(double valor): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-24">
+          <mxGeometry y="100" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-29" value="Cash" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="1060" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-30" value="- caixa: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-29">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-29">
+          <mxGeometry y="52" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-32" value="+&amp;nbsp;autorizarPagamento(double valor) : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-29">
+          <mxGeometry y="60" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-33" value="+ processarPagamento(double valor): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-29">
+          <mxGeometry y="100" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-34" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="XiUmY9_LBj0MNTgVGiD2-24" target="XiUmY9_LBj0MNTgVGiD2-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1350" y="1000" as="sourcePoint" />
+            <mxPoint x="1510" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-35" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="XiUmY9_LBj0MNTgVGiD2-19" target="XiUmY9_LBj0MNTgVGiD2-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1350" y="1000" as="sourcePoint" />
+            <mxPoint x="1510" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-36" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="XiUmY9_LBj0MNTgVGiD2-29" target="XiUmY9_LBj0MNTgVGiD2-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1350" y="1000" as="sourcePoint" />
+            <mxPoint x="1510" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-41" value="ProcessadorDePagamentos" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="560" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-41">
+          <mxGeometry y="26" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-46" value="+ adicionarMeio(MeioDePagamento meio): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-41">
+          <mxGeometry y="34" width="210" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-47" value="+&amp;nbsp;autorizar(double valor, MeioDePagamento meio): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-41">
+          <mxGeometry y="70" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-44" value="+&amp;nbsp;processar(double valor, MeioDePagamento meio): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XiUmY9_LBj0MNTgVGiD2-41">
+          <mxGeometry y="110" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XiUmY9_LBj0MNTgVGiD2-45" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="1" source="XiUmY9_LBj0MNTgVGiD2-10" target="XiUmY9_LBj0MNTgVGiD2-41">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1260" y="750" as="sourcePoint" />
+            <mxPoint x="1420" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
