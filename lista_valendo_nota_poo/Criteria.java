@@ -1,5 +1,7 @@
 package lista_valendo_nota_poo;
+//1.	Crie uma árvore que tem um atributo especial do tipo Criteria. Criteria uma classe abstrata que tem um único método abstrato denominado apply. Esse método recebe um nó de referência e um valor e retorna um nó filho do nó referência caso haja. Crie duas classes que herdam da classe Criteria. Uma classe deve implementar o apply com o critério clássico que é o de que o nó retornado será o da esquerda se o valor passado for menor que o valor contido no nó. A outra classe deve implementar uma abordagem contrária.
 
+//2.	Adicione o atributo peso no nó. Esse atributo vai apoiar a decisão de descida na árvore. Implemente a classe Neuro que herda de Criteria. Essa nova classe se comporta como um neurônio artificial na medida em que utiliza o resultado de uma operação entre o valor e o peso para decidir se retorna o nó direito ou esquerdo. Por exemplo, pode utilizar a operação de multiplicação entre o peso e o valor
 abstract class Criteria {
     public abstract No apply(No referencia, int valor);
 }

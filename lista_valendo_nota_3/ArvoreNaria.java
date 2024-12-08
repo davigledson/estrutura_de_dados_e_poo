@@ -2,10 +2,12 @@ package lista_valendo_nota_3;
 //6. Considere uma árvore cujos nós têm uma quantidade máxima de nós filhos.Essa árvore
 //tem como caso o especial a árvore binária, quando a quantidade máxima de nós é igual
 //a 2
+//7.	Crie algum critério de inserção para a árvore de 6.
+//8.	Crie algum critério de balanceamento para a árvore de 6.
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 public class ArvoreNaria<T> {
 

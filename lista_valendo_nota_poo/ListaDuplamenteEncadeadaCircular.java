@@ -1,5 +1,7 @@
 package lista_valendo_nota_poo;
-//Considere o problema da lista duplamente encadeada circular em que há um Head e
+
+//1.	Desenvolva uma lista duplamente encadeada.
+//8. Considere o problema da lista duplamente encadeada circular em que há um Head e
 //um Tail. Implemente para que haja a máxima coesão das classes.
 public class ListaDuplamenteEncadeadaCircular<T> {
 
